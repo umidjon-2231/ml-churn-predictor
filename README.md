@@ -52,10 +52,8 @@ After step 1 you will see the `=== RESULTS ===` block printed to stdout and six 
 |-------------------------------------------|--------------------------------------------------------|
 | `WA_Fn-UseC_-Telco-Customer-Churn.csv`    | Source dataset (7043 customers, 21 columns)            |
 | `churn_pipeline.py`                       | Full ML pipeline as a script with `# %%` cell markers  |
-| `build_notebook.py`                       | Converts the script into `churn_prediction.ipynb`      |
 | `churn_prediction.ipynb`                  | Executed notebook with embedded outputs                |
 | `experiment.py`                           | Hyperparameter and feature-engineering experiments     |
-| `build_report.py`                         | Fills the report template with results from `results.json` |
 | `project_report_template.docx`            | University-supplied report template (do not edit)      |
 | `churn_report.docx`                       | Final report (auto-generated)                          |
 | `results.json`                            | Persisted metrics, params, thresholds, top features    |
