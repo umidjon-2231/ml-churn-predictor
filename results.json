@@ -1,0 +1,161 @@
+{
+  "metrics": {
+    "Logistic Regression": {
+      "accuracy": 0.7814052519517388,
+      "precision": 0.5714285714285714,
+      "recall": 0.7058823529411765,
+      "f1": 0.631578947368421,
+      "roc_auc": 0.8410912190963342,
+      "threshold": 0.6198248821258343
+    },
+    "Random Forest": {
+      "accuracy": 0.7679205110007097,
+      "precision": 0.5439252336448598,
+      "recall": 0.7780748663101604,
+      "f1": 0.6402640264026402,
+      "roc_auc": 0.8437779327804903,
+      "threshold": 0.48967476048448855
+    },
+    "SVM (RBF)": {
+      "accuracy": 0.7764371894960965,
+      "precision": 0.5628997867803838,
+      "recall": 0.7058823529411765,
+      "f1": 0.6263345195729537,
+      "roc_auc": 0.8306827869487716,
+      "threshold": 0.43552275643879357
+    }
+  },
+  "metrics_default_threshold": {
+    "Logistic Regression": {
+      "accuracy": 0.7359829666430092,
+      "precision": 0.5016891891891891,
+      "recall": 0.7941176470588235,
+      "f1": 0.6149068322981367,
+      "roc_auc": 0.8410912190963342
+    },
+    "Random Forest": {
+      "accuracy": 0.7636621717530163,
+      "precision": 0.538899430740038,
+      "recall": 0.7593582887700535,
+      "f1": 0.6304106548279689,
+      "roc_auc": 0.8437779327804903
+    },
+    "SVM (RBF)": {
+      "accuracy": 0.7934705464868701,
+      "precision": 0.6050632911392405,
+      "recall": 0.6390374331550802,
+      "f1": 0.6215864759427828,
+      "roc_auc": 0.8306827869487716
+    }
+  },
+  "best_model": "Random Forest",
+  "best_params": {
+    "Logistic Regression": {
+      "C": 10.0,
+      "solver": "liblinear"
+    },
+    "Random Forest": {
+      "n_estimators": 700,
+      "max_depth": 10,
+      "min_samples_leaf": 4
+    },
+    "SVM (RBF)": {
+      "C": 0.5,
+      "gamma": 0.01
+    }
+  },
+  "thresholds": {
+    "Logistic Regression": 0.6198248821258343,
+    "Random Forest": 0.48967476048448855,
+    "SVM (RBF)": 0.43552275643879357
+  },
+  "confusion_matrices": {
+    "Logistic Regression": [
+      [
+        837,
+        198
+      ],
+      [
+        110,
+        264
+      ]
+    ],
+    "Random Forest": [
+      [
+        791,
+        244
+      ],
+      [
+        83,
+        291
+      ]
+    ],
+    "SVM (RBF)": [
+      [
+        830,
+        205
+      ],
+      [
+        110,
+        264
+      ]
+    ]
+  },
+  "top_features": [
+    {
+      "name": "tenure",
+      "importance": 0.14685313215294174
+    },
+    {
+      "name": "TotalCharges",
+      "importance": 0.11214821072816149
+    },
+    {
+      "name": "Contract_Two year",
+      "importance": 0.09722926152193943
+    },
+    {
+      "name": "MonthlyCharges",
+      "importance": 0.07252347623821598
+    },
+    {
+      "name": "charges_per_month",
+      "importance": 0.07153133694095377
+    },
+    {
+      "name": "InternetService_Fiber optic",
+      "importance": 0.06850502440340107
+    },
+    {
+      "name": "PaymentMethod_Electronic check",
+      "importance": 0.05135309793871267
+    },
+    {
+      "name": "tenure_bin_49-72",
+      "importance": 0.041363772184378644
+    },
+    {
+      "name": "Contract_One year",
+      "importance": 0.03588242491816716
+    },
+    {
+      "name": "OnlineSecurity_Yes",
+      "importance": 0.025446093906972524
+    }
+  ],
+  "dataset": {
+    "total": 7043,
+    "train": 5634,
+    "test": 1409,
+    "churn_rate_pct": 26.54,
+    "n_features": 35
+  },
+  "preprocessing": {
+    "engineered_features": [
+      "tenure_bin",
+      "charges_per_month",
+      "num_services"
+    ],
+    "drop_first": true
+  }
+}
