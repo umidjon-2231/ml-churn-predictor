@@ -33,15 +33,8 @@ Tested on Python 3.13.
 ## How to run
 
 ```bash
-# 1. Run the full pipeline (data prep, training, evaluation, plots, results.json)
+# Run the full pipeline (data prep, training, evaluation, plots, results.json)
 python churn_pipeline.py
-
-# 2. Build the Jupyter notebook from the script and execute it
-python build_notebook.py
-jupyter nbconvert --to notebook --execute churn_prediction.ipynb --inplace
-
-# 3. Build the Word report (uses results.json + project_report_template.docx)
-python build_report.py
 ```
 
 After step 1 you will see the `=== RESULTS ===` block printed to stdout and six `plot_*.png` files plus `results.json` in the project folder.
